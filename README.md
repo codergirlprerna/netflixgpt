@@ -3,8 +3,11 @@
 -create react app
 -configure tailwind in our project
 -header
+-Routing of App
 -login form
 -formik library:it is very good library when you are building form that is big
+-Form Validation
+-UseRef hook
 
 
 

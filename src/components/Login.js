@@ -1,8 +1,14 @@
 import React, { useState } from 'react'
 import Header from './Header'
+import { checkValidData } from '../utils/Validate';
 
 const Login = () => {
     const[isSignInForm,setIsSignInForm] = useState(true);
+
+    const handleButtonClick = ()=>{
+        //validate form data
+        checkValidData(email,password);
+    }
 
     const toggleSignInForm = ()=>{
         setIsSignInForm(!isSignInForm);
@@ -19,7 +25,7 @@ const Login = () => {
         <input type="text" placeholder="Full Name" className='p-4 my-4 w-full bg-gray-500'/>)}
       <input type="text" placeholder="email address" className='p-4 my-4 w-full bg-gray-500'/>
       <input type="password" placeholder='password' className='p-4 my-4 w-full bg-gray-500'/>
-      <button className='p-4 my-6 bg-red-700 w-full rounded-lg'>{isSignInForm ? "Sign In" : "Sign Up"}</button>
+      <button className='p-4 my-6 bg-red-700 w-full rounded-lg' onClick = {handleButtonClick}>{isSignInForm ? "Sign In" : "Sign Up"}</button>
       <p className="py-4 cursor-pointer" onClick={toggleSignInForm}>{isSignInForm ? "New to Netflix? Sign Up Now": "Already Registered? Sign In Now"}</p>
       </form>
 
