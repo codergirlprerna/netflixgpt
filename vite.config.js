@@ -1,14 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/postcss'  // Corrected import
+import tailwindcss from '@tailwindcss/postcss'
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
+  base: '/netflixgpt/', // 👈 VERY IMPORTANT for GitHub Pages
   plugins: [react()],
   css: {
     postcss: {
-      plugins: [tailwindcss],  // Correctly configured as a PostCSS plugin
+      plugins: [tailwindcss],
     },
-    
   },
 })
