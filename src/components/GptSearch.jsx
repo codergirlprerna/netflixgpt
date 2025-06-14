@@ -3,7 +3,6 @@ import GptSearchBar from './GptSearchBar';
 import GptMovieSuggestion from './GptMovieSuggestion';
 import { BG_URL } from '../utils/constants';
 
-
 const GptSearch = () => {
   return (
     <div className="relative min-h-screen">
