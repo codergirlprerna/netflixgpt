@@ -9,3 +9,15 @@ export const API_OPTIONS = {
 };
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
+export const BG_URL = "https://assets.nflxext.com/ffe/siteui/vlv3/c933529f-8ac1-4289-a113-b89a47b45391/web_tall_panel/IN-en-20250602-TRIFECTA-perspective_b308c7e2-45d3-4dc6-aae0-ee020c0e3afc_large.jpg"
+
+export const SUPPORTED_LANGUAGES = [
+  {identifier:"en",name:"English"},
+  {identifier:"hi",name:"Hindi"},
+  {identifier:"se",name:"Spanish"},
+<<<<<<< Updated upstream
+];
+=======
+];
+
+>>>>>>> Stashed changes

@@ -9,5 +9,6 @@ export default defineConfig({
     postcss: {
       plugins: [tailwindcss],  // Correctly configured as a PostCSS plugin
     },
+    
   },
 })
