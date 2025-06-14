@@ -6,7 +6,8 @@ import { auth } from '../utils/firebase';
 import { updateProfile } from 'firebase/auth';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
-import { AVATAR_URL} from '../utils/constants';
+import { AVATAR_URL, BG_URL} from '../utils/constants';
+
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
@@ -64,7 +65,7 @@ const Login = () => {
     <div>
       <Header />
       <div className='absolute'>
-        <img src='https://assets.nflxext.com/ffe/siteui/vlv3/c933529f-8ac1-4289-a113-b89a47b45391/web_tall_panel/IN-en-20250602-TRIFECTA-perspective_b308c7e2-45d3-4dc6-aae0-ee020c0e3afc_large.jpg' alt='logo'/>
+        <img src={BG_URL} alt='logo'/>
       </div>
       <form onSubmit={(e) => e.preventDefault()} className='w-3/12 absolute p-12 bg-black/80 my-36 mx-auto right-0 left-0 text-white rounded-lg'>
         <h1 className='font-bold text-3xl py-4'>{isSignInForm ? "Sign in" : "Sign Up "}</h1>
